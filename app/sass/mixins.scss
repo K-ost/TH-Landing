@@ -1,0 +1,52 @@
+$grey: #eee;
+$blue: #333e8f;
+$blue_hover: #252e70;
+$orange: rgb(255, 216, 92);
+$orange_hover: rgb(223, 147, 79);
+$orange_dark: rgb(217, 90, 33);
+$gold: #CD9832;
+$gold_hover: #b07c1b;
+
+@mixin clr {
+	&:after {content: ''; clear: both; display: block;}
+}
+@mixin fix {position: fixed; left: 0; top: 0; right: 0; bottom: 0;}
+@mixin bf {content: ''; position: absolute; display: block;}
+@mixin font {font-family: 'Roboto', sans-serif;}
+@mixin gradv($from, $to) {
+	background: $from;
+	background: -moz-linear-gradient(top, $from 0%, $to 100%);
+	background: -webkit-linear-gradient(top, $from 0%, $to 100%);
+	background: linear-gradient(to bottom, $from 0%, $to 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=0 );
+}
+@mixin gradg($from2,$to2) {
+	background: $from2;
+	background: -moz-linear-gradient(left, $from2 0%, $to2 100%);
+	background: -webkit-linear-gradient(left, $from2 0%, $to2 100%);
+	background: linear-gradient(to right, $from2 0%, $to2 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from2', endColorstr='$to2',GradientType=1 ); 
+}
+@mixin inp {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+	outline: none;
+}
+@mixin icon($name,$width,$height) {
+	background-image: url('../images/svg/'+$name+'.svg'); background-repeat: no-repeat;
+	background-position: center center; background-size: cover;
+	display: inline-block; vertical-align: middle;
+	width: $width; height: $height;
+}
+@mixin clamp($num) {
+	display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+@mixin dotlink($color) {
+	text-decoration: none;
+	border-bottom: 1px dotted $color;
+}
+
