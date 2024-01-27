@@ -5,6 +5,7 @@
   --color-blue-hover: #1856B2;
   --color-blue: #226EE0;
   --color-light-blue: #D9E8FF;
+  --color-body: #EBF3FF;
   --color-white: #FFFFFF;
   --color-violet: #B9AFE9;
   --color-violet-blue: #5E81FC;
@@ -24,7 +25,10 @@
   --color-text: #4B5462;
   --ff: "Inter", sans-serif;
   --ff2: "Raleway", sans-serif;
+  --fs: 16px;
   --container: 1200px;
+  --gap: 32px;
+  --gap-sm: 16px;
 }
 
 /* === Reset === */
@@ -39,9 +43,13 @@ html, body {
 }
 
 body {
+  background: var(--color-body);
   margin: 0;
   color: var(--color-text);
   font-family: var(--ff);
+  font-size: var(--fs);
+  font-weight: 400;
+  line-height: 20px;
 }
 
 main {
@@ -113,8 +121,35 @@ input::-moz-focus-inner {
 }
 
 /* grid */
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  width: 100%;
+}
+
 .grid {
   display: grid;
+  grid-column-gap: var(--gap);
+  grid-row-gap: var(--gap-sm);
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-6 {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 /* pagetitle */
@@ -126,6 +161,7 @@ input::-moz-focus-inner {
   color: var(--color-dark-extra);
   font-family: var(--ff2);
   font-size: 64px;
+  line-height: 70px;
   font-weight: 700;
   margin: 0 0 32px;
 }
@@ -141,7 +177,40 @@ input::-moz-focus-inner {
   line-height: 25px;
 }
 
-/* Header */
-/*.icon { @include retina-sprite($check-group); } */
-/* Content */
-/* Footer */
+/* questionbox */
+.questionbox {
+  background: linear-gradient(90deg, #226EE0 0%, #7B61FF 100%);
+  border-radius: 24px;
+  color: var(--color-white);
+  margin: 0 0 240px;
+  padding: 48px 64px;
+}
+.questionbox-title {
+  font-size: 48px;
+  font-family: var(--ff2);
+  font-weight: 700;
+  line-height: 53px;
+  margin: 0 0 var(--gap-sm);
+}
+.questionbox-details {
+  align-items: flex-end;
+  display: flex;
+}
+.questionbox-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0 64px 0 0;
+}
+
+/* service_card */
+.service_card {
+  background: #F7FAFF;
+  border-radius: 24px;
+  padding: 48px 40px;
+}
+.service_card .pagetitle-head {
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0 0 var(--gap-sm);
+}

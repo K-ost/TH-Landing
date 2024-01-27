@@ -3,24 +3,42 @@
 
 
 
+/* questionbox */
+.questionbox {
+  background: linear-gradient(90deg, #226EE0 0%, #7B61FF 100%);
+  border-radius: 24px;
+  color: var(--color-white);
+  margin: 0 0 240px;
+  padding: 48px 64px;
+  &-title {
+    font-size: 48px;
+    font-family: var(--ff2);
+    font-weight: 700;
+    line-height: 53px;
+    margin: 0 0 var(--gap-sm);
+  }
+  &-details {
+    align-items: flex-end;
+    display: flex;
+  }
+  &-text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 64px 0 0;
+  }
+}
 
-/* Header */
-.header {}
 
-
-/*.icon { @include retina-sprite($check-group); } */
-
-
-
-
-/* Content */
-.content {}
-
-
-
-
-
-/* Footer */
-.footer {}
-
+/* service_card */
+.service_card {
+  background: #F7FAFF;
+  border-radius: 24px;
+  padding: 48px 40px;
+  .pagetitle-head {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0 0 var(--gap-sm);
+  }
+}
 

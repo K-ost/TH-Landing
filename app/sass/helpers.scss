@@ -8,6 +8,7 @@
 	--color-blue-hover: #1856B2;
 	--color-blue: #226EE0;
 	--color-light-blue: #D9E8FF;
+	--color-body: #EBF3FF;
 	--color-white: #FFFFFF;
 	--color-violet: #B9AFE9;
 	--color-violet-blue: #5E81FC;
@@ -27,7 +28,10 @@
 	--color-text: #4B5462;
 	--ff: 'Inter', sans-serif;
 	--ff2: 'Raleway', sans-serif;
+	--fs: 16px;
 	--container: 1200px;
+	--gap: 32px;
+	--gap-sm: 16px;
 }
 
 
@@ -35,9 +39,13 @@
 * {box-sizing: border-box;}
 html, body {height: 100%; min-height: 100%; margin: 0;}
 body {
+	background: var(--color-body);
 	margin: 0;
 	color: var(--color-text);
 	font-family: var(--ff);
+	font-size: var(--fs);
+	font-weight: 400;
+	line-height: 20px;
 }
 main {display: block;}
 img {border: 0; max-width: 100%;}
@@ -56,8 +64,21 @@ input::-moz-focus-inner {border: 0; padding: 0;}
 
 
 /* grid */
+.container {
+	max-width: var(--container);
+	margin: 0 auto;
+	width: 100%;
+}
 .grid {
 	display: grid;
+	grid-column-gap: var(--gap);
+	grid-row-gap: var(--gap-sm);
+	grid-template-columns: repeat(3, 1fr);
+	@for $i from 1 through 6 {
+		&-#{$i} {
+			grid-template-columns: repeat($i, 1fr);
+		}
+	}
 }
 
 
@@ -69,6 +90,7 @@ input::-moz-focus-inner {border: 0; padding: 0;}
 		color: var(--color-dark-extra);
 		font-family: var(--ff2);
 		font-size: 64px;
+		line-height: 70px;
 		font-weight: 700;
 		margin: 0 0 32px;
 		span { color: var(--color-violet-blue); }
