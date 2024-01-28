@@ -1,4 +1,5 @@
-<div class="service_card">
+<div class="service_card @@if(context.sm){service_card-sm}">
+  @@if(context.tag){<div class="service_card-tag @@if(context.color){service_card-@@color}">@@tag</div>}
   <div class="pagetitle-head">@@title</div>
   <div class="service_card-text">@@text</div>
 </div><!-- /service_card -->
