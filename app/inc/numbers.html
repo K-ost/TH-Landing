@@ -1,0 +1,8 @@
+<div class="grid grid-3 numbers_section @@if(context.large){numbers_section-large}">
+  @@for(var i = 0; i < list.length; i++) {
+  <div class="numbers_section-item">
+    <div class="numbers_section-title">` + list[i].title + `</div>
+    <div class="numbers_section-text">` + list[i].text + `</div>
+  </div>
+  }
+</div><!-- /numbers_section -->
