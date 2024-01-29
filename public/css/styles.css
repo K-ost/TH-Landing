@@ -211,6 +211,13 @@ h2, .h2 {
   text-decoration: none;
   white-space: nowrap;
 }
+.btn-sm {
+  padding: 10px 16px;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
 .btn-primary {
   background: var(--color-blue);
   color: var(--color-white);
@@ -301,6 +308,55 @@ h2, .h2 {
 .tagcloud-btn:hover {
   background: var(--color-violet-blue);
   color: var(--color-white);
+}
+
+/* tabsbox */
+.tabsbox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 0 68px;
+}
+.tabsbox li {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0 12px 12px 0;
+}
+.tabsbox li:last-child {
+  margin-right: 0;
+}
+.tabsbox li a {
+  border: 1px solid var(--color-violet-blue);
+  border-radius: 40px;
+  color: var(--color-dark-extra);
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.tabsbox li a.active {
+  background: var(--color-violet-blue);
+  color: var(--color-white);
+}
+
+/* icon_check / icon_close */
+.iconbox {
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.iconbox_check {
+  background-color: var(--color-violet-blue);
+  background-image: url("../images/svg/check.svg");
+}
+.iconbox_check-light {
+  background-color: var(--color-violet-light);
+  background-image: url("../images/svg/check-blue.svg");
+}
+.iconbox_close {
+  background-image: url("../images/svg/times.svg");
 }
 
 /* questionbox */
@@ -632,4 +688,154 @@ h2, .h2 {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+/* tariffs */
+.tariffs {
+  color: var(--color-dark-extra);
+  font-weight: 700;
+  margin: 0 0 120px;
+}
+.tariffs .grid {
+  grid-column-gap: 0;
+}
+.tariffs-col {
+  background: var(--color-white);
+  border-radius: 24px;
+  margin-top: 32px;
+}
+.tariffs-col.first {
+  border-radius: 24px 0 0 24px;
+}
+.tariffs-col.last {
+  border-radius: 0 24px 24px 0;
+}
+.tariffs-header {
+  line-height: 20px;
+  margin: 0 0 16px;
+  padding: 32px;
+  text-align: center;
+}
+.tariffs-item {
+  align-items: center;
+  border-bottom: 1px solid var(--color-light-blue);
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+  justify-content: center;
+  text-align: center;
+  min-height: 48px;
+}
+.tariffs-item.last {
+  border-bottom-color: transparent !important;
+}
+.tariffs-first {
+  padding-top: 132px;
+}
+.tariffs-first .tariffs-item {
+  justify-content: flex-start;
+  text-align: left;
+}
+.tariffs-footer {
+  padding: 32px;
+  text-align: center;
+}
+.tariffs-price {
+  font-family: var(--ff2);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0 0 24px;
+}
+.tariffs-price small {
+  color: var(--color-semidark);
+  font-size: 16px;
+  font-family: var(--ff);
+  font-weight: 400;
+  line-height: 20px;
+}
+.tariffs-pro {
+  background: var(--color-violet-blue);
+  color: var(--color-white);
+  margin: 0;
+}
+.tariffs-pro .tariffs-item {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+.tariffs-pro .tariffs-header {
+  padding-top: 64px;
+}
+.tariffs-pro .tariffs-footer {
+  padding-bottom: 64px;
+}
+.tariffs-pro .tariffs-price small {
+  color: #E8EAED;
+}
+
+/* footer */
+.footer {
+  color: var(--color-dark-extra);
+  font-size: 14px;
+  line-height: 18px;
+  padding: 112px 0 0;
+}
+.footer-logo {
+  margin: 0 0 40px;
+}
+.footer-logo img {
+  display: block;
+}
+.footer-title {
+  color: var(--color-violet-blue);
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+.footer-nav {
+  margin: 0 0 var(--gap);
+}
+.footer-nav li {
+  margin: 0 0 12px;
+}
+.footer-nav li a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer-nav li a:hover {
+  color: var(--color-violet-blue);
+  text-decoration: underline;
+}
+.footer-text {
+  margin: 0 0 40px;
+}
+.footer-text a:not(.btn) {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+.footer-text a:not(.btn):hover {
+  text-decoration: underline;
+}
+.footer-text p {
+  margin: 0 0 16px;
+}
+.footer-phone {
+  font-family: var(--ff2);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 0 0 13px;
+}
+.footer-phone a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* copyright */
+.copyright {
+  align-items: center;
+  border-top: 1px solid var(--color-violet-light);
+  display: flex;
+  font-size: 12px;
+  line-height: 15px;
+  justify-content: space-between;
+  padding: 24px 0;
 }
