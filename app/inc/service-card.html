@@ -1,0 +1,10 @@
+<a href="#" class="service_card@@if(context.large){ service_card-large}">
+  @@if(!context.large){<span class="service_card-icon">
+    <img src="images/svg/@@icon.svg" alt="">
+  </span>}
+  <span class="service_card-title">
+    @@if(context.large){<img src="images/svg/@@icon.svg" alt="">}
+    @@title
+  </span>
+  @@if(context.text){<span class="service_card-text">@@text</span>}
+</a><!-- /service_card -->

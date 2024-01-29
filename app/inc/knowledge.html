@@ -1,18 +1,22 @@
 <div class="whitebox knowledge @@if(context.cloud){knowledge-dark}">
-  <div class="whitebox-tag whitebox-@@color">@@tag</div>
-  <div class="pagetitle-head">@@title</div>
-  <div class="whitebox-text">@@text</div>
+  @@if(context.tag){<div class="whitebox-tag whitebox-@@color">@@tag</div>}
 
-  @@if(context.img){<img src="images/img-@@img.png" alt="">}
+  <div class="knowledge-details">
+    <div class="pagetitle-head @@if(context.large){large}">@@title</div>
+    <div class="whitebox-text">@@text</div>
 
-  @@if(context.cloud){
-  <div class="tagcloud">
-    <a href="#" class="tagcloud-btn">Ранний доступ к новинкам</a>
-    <a href="#" class="tagcloud-btn">Мозгоштурмы с экспертами</a>
-    <a href="#" class="tagcloud-btn">Закрытый чат</a>
-    <a href="#" class="tagcloud-btn">Интенсивы без воды</a>
-    <a href="#" class="tagcloud-btn">Нетворкинг</a>
-    <a href="#" class="tagcloud-btn">Мастер-классы без продаж</a>
-  </div><!-- /tagcloud -->
-  <a href="#" class="btn btn-primary btn-top"><span>Стать участником</span></a>}
+    @@if(context.cloud){
+    <div class="tagcloud">
+      <a href="#" class="tagcloud-btn">Ранний доступ к новинкам</a>
+      <a href="#" class="tagcloud-btn">Мозгоштурмы с экспертами</a>
+      <a href="#" class="tagcloud-btn">Закрытый чат</a>
+      <a href="#" class="tagcloud-btn">Интенсивы без воды</a>
+      <a href="#" class="tagcloud-btn">Нетворкинг</a>
+      <a href="#" class="tagcloud-btn">Мастер-классы без продаж</a>
+    </div><!-- /tagcloud -->
+    <a href="#" class="btn btn-primary btn-top"><span>Стать участником</span></a>}
+
+  </div><!-- /knowledge-details -->
+
+  @@if(context.img){<img src="images/img-@@img.png" alt="" class="knowledge-img">}
 </div><!-- /knowledge -->
