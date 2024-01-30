@@ -8,7 +8,7 @@
   background: linear-gradient(90deg, #226EE0 0%, #7B61FF 100%);
   border-radius: 24px;
   color: var(--color-white);
-  margin: 0 0 240px;
+  margin: 0 0 var(--margin-huge);
   padding: 48px 64px;
   &-title {
     font-size: 48px;
@@ -174,7 +174,7 @@
 	grid-column-gap: var(--gap);
 	grid-row-gap: var(--gap-sm);
   max-height: 604px;
-  margin: 0 0 240px;
+  margin: 0 0 var(--margin-huge);
   .knowledge { padding-top: 48px; }
   .knowledge-img { max-width: 200px; }
   .whitebox-text { font-size: 14px; line-height: 18px; }
@@ -321,6 +321,67 @@
 }
 
 
+
+/* reviews */
+.review {
+  background: rgba(255, 255, 255, 0.60);
+  border-radius: 24px;
+  padding: 40px 32px;
+  font-size: 14px;
+  line-height: 18px;
+  &-card {
+    align-items: center;
+    display: flex;
+    margin: 0 0 70px;
+    &_img { min-width: 64px; max-width: 64px; height: 64px; object-fit: cover; display: block; margin: 0 12px 0 0; }
+    &_name {      
+      color: var(--color-dark);
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      margin: 0 0 4px;
+    }
+    &_role { color: var(--color-semidark); font-size: 12px; line-height: 15px; }
+  }
+  &-text {
+    margin: 0 0 70px;
+    p { margin: 0 0 16px; }
+  }
+  &-more { font-weight: 600; }
+}
+.reviews {
+  margin: 0 0 var(--margin-huge);
+  overflow: hidden;
+  .swiper { overflow: visible; }
+  .swiper-slide {
+    width: 373px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    .review { width: 100%; }
+    &-active .review {
+      font-size: 16px;
+      line-height: 20px;
+      &-card {
+        margin: 0 0 53px;
+        &_img { min-width: 80px; max-width: 80px; height: 80px; margin: 0 24px 0 0; }
+        &_name { font-size: 20px; line-height: 25px; }
+        &_role { font-size: 14px; line-height: 18px; }
+      }
+      &-text { margin: 0 0 53px; }
+    }
+  }
+}
+
+
+/* brands_wrapper */
+.brands_wrapper {
+  background: var(--color-violet-light);
+  margin: 0 0 var(--margin-huge);
+  padding: 112px 0;
+}
+
+
 /* footer */
 .footer {
   color: var(--color-dark-extra);
@@ -371,6 +432,35 @@
   line-height: 15px;
   justify-content: space-between;
   padding: 24px 0;
+  &-nav {
+    align-items: center;
+    display: flex;
+  }
+}
+.footicons {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0 32px 0 0;
+  &:last-child { margin: 0; }
+  li {
+    margin: 0 12px 0 0;
+    &:last-child { margin: 0; }
+  }
+  &_icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 24px;
+    height: 24px;
+    &-vk { background-image: url('../images/svg/icon-vk.svg'); }
+    &-tme { background-image: url('../images/svg/icon-tme.svg'); }
+    &-pen { background-image: url('../images/svg/icon-pen.svg'); }
+    &-youtube { background-image: url('../images/svg/icon-youtube.svg'); }
+    &-dzen { background-image: url('../images/svg/icon-dzen.svg'); }
+  }
 }
 
 

@@ -4,15 +4,17 @@
       <div class="swiper-slide">
         <div class="tariffs-first">
           @@loop('table-line.html', [
-            { "title": "Стандартные инструменты" },
-            { "title": "Одновременно задач" },
-            { "title": "Скорость парсинга" },
-            { "title": "PRO-базы и инструменты ВК" },
-            { "title": "Автоматизация парсинга" },
-            { "title": "Новые вступления и друзья" },
-            { "title": "Одновременно авто-задач" },
-            { "title": "Авто-задачи без задержки" },
-            { "title": "Поиск и анализ меломанов", "last": true }
+            { "title": "Рассылки" },
+            { "title": "Мини-лендинги" },
+            { "title": "Аналитика воронок" },
+            { "title": "Уведомления из сообщества" },
+            { "title": "Конструктор чат-ботов" },
+            { "title": "Баланс сообщений" },
+            { "title": "Готовые шаблоны ботов" },
+            { "title": "Рассылка по событиям" },
+            { "title": "Интеграции" },
+            { "title": "Удаление участников" },
+            { "title": "Авто-удаление собачек", "last": true }
           ])
         </div>
       </div><!-- /slide -->
@@ -22,17 +24,19 @@
           <div class="tariffs-header">Основной</div>
           @@loop('table-line.html', [
             { "check": true },
-            { "title": "2" },
-            { "title": "x5" },
-            { "times": true },
             { "check": true },
             { "check": true },
-            { "title": "1" },
-            { "times": true },
+            { "check": true },
+            { "check": true },
+            { "title": "150 000 в месяц" },
+            { "check": true },
+            { "check": true },
+            { "check": true },
+            { "check": true },
             { "check": true, "last": true }
           ])
           <div class="tariffs-footer">
-            <div class="tariffs-price">1 333 ₽ <small>/мес.*</small></div>
+            <div class="tariffs-price">699 ₽ <small>/мес.*</small></div>
             <a href="#" class="btn btn-block btn-sm btn-white">Подключить</a>
           </div>
         </div>
@@ -43,14 +47,16 @@
           <div class="tariffs-header">Тариф Pro (Все сервисы)</div>
           @@loop('table-line.html', [
             { "check_light": true },
-            { "title": "5" },
-            { "title": "x10" },
             { "check_light": true },
             { "check_light": true },
             { "check_light": true },
-            { "title": "3" },
             { "check_light": true },
-            { "title": "PRO базы", "last": true }
+            { "title": "Безлимит" },
+            { "check_light": true },
+            { "check_light": true },
+            { "check_light": true },
+            { "check_light": true },
+            { "check_light": true, "last": true }
           ])
           <div class="tariffs-footer">
             <div class="tariffs-price">2 999 ₽ <small>/мес.*</small></div>
@@ -64,17 +70,19 @@
           <div class="tariffs-header">Бесплатный</div>
           @@loop('table-line.html', [
             { "check": true },
-            { "title": "2" },
-            { "title": "x5" },
+            { "check": true },
+            { "check": true },
+            { "check": true },
+            { "check": true },
+            { "title": "150 в день" },
+            { "title": "ограничены" },
             { "times": true },
             { "times": true },
             { "times": true },
-            { "times": true },
-            { "times": true },
-            { "check": true, "last": true }
+            { "times": true, "last": true }
           ])
           <div class="tariffs-footer">
-            <div class="tariffs-price">666 ₽ <small>/мес.*</small></div>
+            <div class="tariffs-price">Бесплатно</div>
             <a href="#" class="btn btn-block btn-sm btn-white">Подключить</a>
           </div>
         </div>

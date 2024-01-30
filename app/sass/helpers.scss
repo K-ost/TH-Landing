@@ -34,6 +34,7 @@
 	--gap: 32px;
 	--gap-sm: 16px;
 	--margin-section: 120px;
+	--margin-huge: 240px;
 }
 
 
@@ -55,7 +56,7 @@ p {margin: 0 0 24px; &:last-child {margin: 0;} }
 ul, ol {padding: 0; margin: 0;}
 li {list-style: none;}
 a, input, textarea {outline: none;}
-a {color: blue;}
+a {color: var(--color-blue); text-decoration: none;}
 a:hover {text-decoration: none;}
 th {font-weight: normal; text-align: left;}
 fieldset {padding: 0; border: 0; margin: 0;}
@@ -70,6 +71,7 @@ input::-moz-focus-inner {border: 0; padding: 0;}
 	max-width: var(--container);
 	margin: 0 auto;
 	width: 100%;
+	padding: 0;
 }
 .grid {
 	display: grid;
@@ -117,6 +119,7 @@ h2, .h2 {
 	font-weight: 700;
 	line-height: 35px;
 	margin: 0 0 24px;
+	span { color: var(--color-violet-blue); }
 }
 
 
@@ -180,6 +183,7 @@ h2, .h2 {
 		border: 1px solid var(--color-violet-blue);
 		border-radius: 30px;
 		color: var(--color-dark-extra);
+		display: inline-block;
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 18px;
@@ -197,10 +201,12 @@ h2, .h2 {
 
 /* tabsbox */
 .tabsbox {
+	border: 0;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 0 0 68px;
+	padding: 0;
 	li {
 		font-size: 14px;
 		line-height: 18px;

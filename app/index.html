@@ -166,27 +166,43 @@
 		])
 	</div><!-- /projects -->
 
+</div><!-- /container -->
 
 
+@@include('inc/brands.html')
+
+
+<div class="container">
 
 	@@include('inc/pagetitle.html', {
 		"title": "Люди, которым <span>нравится</span><br> то, что мы делаем"
 	})
+</div><!-- /container -->
 	
-	
+	@@include('inc/reviews.html')
+
+<div class="container">
 	
 	@@include('inc/pagetitle.html', {
 		"title": "У нас есть <span>идеальный</span> тариф<br> для каждого",
 		"text": "Выберите интересующий сервис<br> <small>Если вам нужны все сервисы сразу, идеальный выбор — <b>Тариф Pro</b></small>"
 	})
 
-	<ul class="tabsbox">
-		<li><a href="#" class="active">Поиск аудитории ВК и ОК</a></li>
-		<li><a href="#">Конструктор чат-ботов BotHunter</a></li>
-		<li><a href="#">Постинг с маркировкой PostHunter</a></li>
+	<ul class="tabsbox nav nav-tabs">
+		<li role="presentation"><a href="#" data-bs-toggle="tab" data-bs-target="#first-tab" class="active">Поиск аудитории ВК и ОК</a></li>
+		<li role="presentation"><a href="#" data-bs-toggle="tab" data-bs-target="#second-tab">Конструктор чат-ботов BotHunter</a></li>
+		<li role="presentation"><a href="#" data-bs-toggle="tab" data-bs-target="#third-tab">Постинг с маркировкой PostHunter</a></li>
 	</ul><!-- /tabsbox -->
 
-	@@include('inc/table.html')
+	<div class="tab-content" role="tablist">
+		<div class="tab-pane fade show active" id="first-tab" role="tabpanel">
+			@@include('inc/table.html')
+		</div>
+		<div class="tab-pane fade" id="second-tab" role="tabpanel">
+			@@include('inc/table2.html')
+		</div>
+		<div class="tab-pane fade" id="third-tab" role="tabpanel">3</div>
+	</div>
 
 
 	@@include('inc/question.html', {

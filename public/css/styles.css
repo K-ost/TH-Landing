@@ -31,6 +31,7 @@
   --gap: 32px;
   --gap-sm: 16px;
   --margin-section: 120px;
+  --margin-huge: 240px;
 }
 
 /* === Reset === */
@@ -84,7 +85,8 @@ a, input, textarea {
 }
 
 a {
-  color: blue;
+  color: var(--color-blue);
+  text-decoration: none;
 }
 
 a:hover {
@@ -127,6 +129,7 @@ input::-moz-focus-inner {
   max-width: var(--container);
   margin: 0 auto;
   width: 100%;
+  padding: 0;
 }
 
 .grid {
@@ -191,6 +194,9 @@ h2, .h2 {
   font-weight: 700;
   line-height: 35px;
   margin: 0 0 24px;
+}
+h2 span, .h2 span {
+  color: var(--color-violet-blue);
 }
 
 /* btn */
@@ -297,6 +303,7 @@ h2, .h2 {
   border: 1px solid var(--color-violet-blue);
   border-radius: 30px;
   color: var(--color-dark-extra);
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -312,10 +319,12 @@ h2, .h2 {
 
 /* tabsbox */
 .tabsbox {
+  border: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 0 68px;
+  padding: 0;
 }
 .tabsbox li {
   font-size: 14px;
@@ -364,7 +373,7 @@ h2, .h2 {
   background: linear-gradient(90deg, #226EE0 0%, #7B61FF 100%);
   border-radius: 24px;
   color: var(--color-white);
-  margin: 0 0 240px;
+  margin: 0 0 var(--margin-huge);
   padding: 48px 64px;
 }
 .questionbox-title {
@@ -554,7 +563,7 @@ h2, .h2 {
   grid-column-gap: var(--gap);
   grid-row-gap: var(--gap-sm);
   max-height: 604px;
-  margin: 0 0 240px;
+  margin: 0 0 var(--margin-huge);
 }
 .projects .knowledge {
   padding-top: 48px;
@@ -772,6 +781,97 @@ h2, .h2 {
   color: #E8EAED;
 }
 
+/* reviews */
+.review {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 40px 32px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.review-card {
+  align-items: center;
+  display: flex;
+  margin: 0 0 70px;
+}
+.review-card_img {
+  min-width: 64px;
+  max-width: 64px;
+  height: 64px;
+  object-fit: cover;
+  display: block;
+  margin: 0 12px 0 0;
+}
+.review-card_name {
+  color: var(--color-dark);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  margin: 0 0 4px;
+}
+.review-card_role {
+  color: var(--color-semidark);
+  font-size: 12px;
+  line-height: 15px;
+}
+.review-text {
+  margin: 0 0 70px;
+}
+.review-text p {
+  margin: 0 0 16px;
+}
+.review-more {
+  font-weight: 600;
+}
+
+.reviews {
+  margin: 0 0 var(--margin-huge);
+  overflow: hidden;
+}
+.reviews .swiper {
+  overflow: visible;
+}
+.reviews .swiper-slide {
+  width: 373px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.reviews .swiper-slide .review {
+  width: 100%;
+}
+.reviews .swiper-slide-active .review {
+  font-size: 16px;
+  line-height: 20px;
+}
+.reviews .swiper-slide-active .review-card {
+  margin: 0 0 53px;
+}
+.reviews .swiper-slide-active .review-card_img {
+  min-width: 80px;
+  max-width: 80px;
+  height: 80px;
+  margin: 0 24px 0 0;
+}
+.reviews .swiper-slide-active .review-card_name {
+  font-size: 20px;
+  line-height: 25px;
+}
+.reviews .swiper-slide-active .review-card_role {
+  font-size: 14px;
+  line-height: 18px;
+}
+.reviews .swiper-slide-active .review-text {
+  margin: 0 0 53px;
+}
+
+/* brands_wrapper */
+.brands_wrapper {
+  background: var(--color-violet-light);
+  margin: 0 0 var(--margin-huge);
+  padding: 112px 0;
+}
+
 /* footer */
 .footer {
   color: var(--color-dark-extra);
@@ -838,4 +938,48 @@ h2, .h2 {
   line-height: 15px;
   justify-content: space-between;
   padding: 24px 0;
+}
+.copyright-nav {
+  align-items: center;
+  display: flex;
+}
+
+.footicons {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin: 0 32px 0 0;
+}
+.footicons:last-child {
+  margin: 0;
+}
+.footicons li {
+  margin: 0 12px 0 0;
+}
+.footicons li:last-child {
+  margin: 0;
+}
+.footicons_icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.footicons_icon-vk {
+  background-image: url("../images/svg/icon-vk.svg");
+}
+.footicons_icon-tme {
+  background-image: url("../images/svg/icon-tme.svg");
+}
+.footicons_icon-pen {
+  background-image: url("../images/svg/icon-pen.svg");
+}
+.footicons_icon-youtube {
+  background-image: url("../images/svg/icon-youtube.svg");
+}
+.footicons_icon-dzen {
+  background-image: url("../images/svg/icon-dzen.svg");
 }
