@@ -1,26 +1,6 @@
 @@include('inc/header.html')
 
-
-<div class="firstscreen">
-	<div class="container">
-		<div class="firstscreen-details">
-			<div class="h1">Экосистема TargetHunter</div>
-			<div class="firstscreen-text">
-				Познакомьтесь с экосистемой сервисов для продвижения в социальных сетях</p>
-			</div>
-			<div class="firstscreen-buttons">
-				<button class="btn btn-primary">Начать работу</button>
-				<button class="btn btn-play"><span>Узнать об экосистеме за 120 секунд</span></button>
-			</div>
-			<div class="firstscreen-partners">
-				<a href="#" class="social_icon social_icon-vk"></a>
-				<a href="#" class="social_icon social_icon-ok"></a>
-				<span>официальный партнер</span>
-			</div>
-		</div>
-	</div>
-</div><!-- /firstscreen -->
-
+@@include('inc/firstscreen.html')
 
 <div class="container">
 
@@ -41,7 +21,7 @@
 		"text": "Сфокусируйтесь на важном, пока сервисы экосистемы работают за вас"
 	})
 
-	<div class="grid grid-3 grid-tb-2 solutions">
+	<div class="grid grid-3 grid-tb-2 grid-mb-1 solutions">
 		@@loop('inc/solution.html', [
 			{ "title": "Сбор и анализ целевой аудитории c <span>TargetHunter</span>", "text": "Настраивайте рекламу при помощи 150+ инструментов парсера, автоматизируйте сбор и загрузку аудиторий в рекламный кабинет и анализируйте промопосты конкурентов", "id": 1 },
 			{ "title": "Агентские кабинеты <span>LeadHunter</span>", "text": "Выгодно пополняйте рекламные кабинеты через LeadHunter и получайте вознаграждение, а ещё удобное управление рекламными кабинетами, все закрывающие документы для вашей бухгалтерии, правильную отчётность по маркировке рекламы и легендарную поддержку 24/7", "id": 2 },
@@ -63,7 +43,7 @@
 		"text": "Выберите ваш способ получить больше пользы и снизить расход"
 	})
 
-	<div class="benefits">
+	<div class="benefits grid-mb-1">
 		@@loop('inc/benefit.html', [
 			{ "title": "Партнерская программа", "text": "Пожизненное вознаграждение 10% от суммы любых покупок приведённых вами пользователей экосистемы. 20 млн.+ перечислено нашим партнёрам", "tag": "Для владельцев бизнеса", "color": "violet" },
 			{ "title": "Бонусная система", "text": "Получайте бонусы за любые покупки и траты бюджета в нашей экосистеме. 2 рубля = 1 бонус", "tag": "Для владельцев бизнеса", "color": "blue" },
@@ -220,7 +200,7 @@
 
 	<div class="chats_wrapper">
 		<div class="h2">Общайтесь в наших чатах</div>
-		<div class="grid grid-2">
+		<div class="grid grid-2 grid-mb-1">
 			@@loop('inc/service-card.html', [
 				{ "icon": "vk", "title": "Telegram чат", "text": "Общайтесь с коллегами, задавайте вопрос, разместите вакансию", "large": true },
 				{ "icon": "tme", "title": "ВК чат", "text": "Задавайте вопросы, получайте ответы коллег и экспертов TargetHunter", "large": true },
@@ -233,7 +213,7 @@
 		<div class="about_section-text">
 			<div class="h2">О нас</div>
 			<p>Экосистема TargetHunter – это пул IT-решений для владельцев бизнеса и специалистов по маркетингу. Мы создаем программное обеспечение для рекламной отрасли с 2015 года, ежегодно расширяем функционал и внедряем новейшие разработки.</p>
-			<a href="#" class="btn btn-primary btn-top"><span>Подробнее в блоге</span></a>
+			<a href="#" class="btn btn-primary btn-top btn-mb-block"><span>Подробнее в блоге</span></a>
 		</div>
 		<div class="about_section-copy">Все IT-разработки и обучающие материалы под брендом TargetHunter принадлежат ООО «Технологии маркетинга» (ОГРН 1169658069195, ИНН 6683010997)</div>
 	</div><!-- /about_section -->

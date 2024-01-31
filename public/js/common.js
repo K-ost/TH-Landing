@@ -26,3 +26,13 @@ const brandsSlider = new Swiper("#brands_slider", {
     900: { slidesPerView: 5 },
   }
 })
+
+// tariffs1
+const tariffs1 = new Swiper(".tariffs-slider .swiper", {
+  slidesPerView: 1,
+  spaceBetween: 8,
+  breakpoints: {
+    720: { slidesPerView: 2 },
+    900: { slidesPerView: 3 },
+  }
+})

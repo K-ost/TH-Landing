@@ -1,93 +1,92 @@
-<div class="tariffs">
-  <div class="swiper">
-    <div class="swiper-wrapper grid grid-4">
-      <div class="swiper-slide">
-        <div class="tariffs-first">
-          @@loop('table-line.html', [
-            { "title": "Рассылки" },
-            { "title": "Мини-лендинги" },
-            { "title": "Аналитика воронок" },
-            { "title": "Уведомления из сообщества" },
-            { "title": "Конструктор чат-ботов" },
-            { "title": "Баланс сообщений" },
-            { "title": "Готовые шаблоны ботов" },
-            { "title": "Рассылка по событиям" },
-            { "title": "Интеграции" },
-            { "title": "Удаление участников" },
-            { "title": "Авто-удаление собачек", "last": true }
-          ])
-        </div>
-      </div><!-- /slide -->
-
-      <div class="swiper-slide">
-        <div class="tariffs-col first">
-          <div class="tariffs-header">Основной</div>
-          @@loop('table-line.html', [
-            { "check": true },
-            { "check": true },
-            { "check": true },
-            { "check": true },
-            { "check": true },
-            { "title": "150 000 в месяц" },
-            { "check": true },
-            { "check": true },
-            { "check": true },
-            { "check": true },
-            { "check": true, "last": true }
-          ])
-          <div class="tariffs-footer">
-            <div class="tariffs-price">699 ₽ <small>/мес.*</small></div>
-            <a href="#" class="btn btn-block btn-sm btn-white">Подключить</a>
+<div class="tariffs grid grid-4 grid-mb-1">
+  <div class="tariffs-first">
+    @@loop('table-line.html', [
+      { "title": "Рассылки" },
+      { "title": "Мини-лендинги" },
+      { "title": "Аналитика воронок" },
+      { "title": "Уведомления из сообщества" },
+      { "title": "Конструктор чат-ботов" },
+      { "title": "Баланс сообщений" },
+      { "title": "Готовые шаблоны ботов" },
+      { "title": "Рассылка по событиям" },
+      { "title": "Интеграции" },
+      { "title": "Удаление участников" },
+      { "title": "Авто-удаление собачек", "last": true }
+    ])
+  </div>
+  <div class="tariffs-slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="tariffs-col first">
+            <div class="tariffs-header">Основной</div>
+            @@loop('table-line.html', [
+              { "check": true },
+              { "check": true },
+              { "check": true },
+              { "check": true },
+              { "check": true },
+              { "title": "150 000 в месяц" },
+              { "check": true },
+              { "check": true },
+              { "check": true },
+              { "check": true },
+              { "check": true, "last": true }
+            ])
+            <div class="tariffs-footer">
+              <div class="tariffs-price">699 ₽ <small>/мес.*</small></div>
+              <a href="#" class="btn btn-block btn-sm btn-white">Подключить</a>
+            </div>
           </div>
-        </div>
-      </div><!-- /slide -->
+        </div><!-- /slide -->
 
-      <div class="swiper-slide">
-        <div class="tariffs-col tariffs-pro">
-          <div class="tariffs-header">Тариф Pro (Все сервисы)</div>
-          @@loop('table-line.html', [
-            { "check_light": true },
-            { "check_light": true },
-            { "check_light": true },
-            { "check_light": true },
-            { "check_light": true },
-            { "title": "Безлимит" },
-            { "check_light": true },
-            { "check_light": true },
-            { "check_light": true },
-            { "check_light": true },
-            { "check_light": true, "last": true }
-          ])
-          <div class="tariffs-footer">
-            <div class="tariffs-price">2 999 ₽ <small>/мес.*</small></div>
-            <a href="#" class="btn btn-block btn-sm btn-white">Подключить</a>
+        <div class="swiper-slide">
+          <div class="tariffs-col tariffs-pro">
+            <div class="tariffs-header">Тариф Pro (Все сервисы)</div>
+            @@loop('table-line.html', [
+              { "check_light": true },
+              { "check_light": true },
+              { "check_light": true },
+              { "check_light": true },
+              { "check_light": true },
+              { "title": "Безлимит" },
+              { "check_light": true },
+              { "check_light": true },
+              { "check_light": true },
+              { "check_light": true },
+              { "check_light": true, "last": true }
+            ])
+            <div class="tariffs-footer">
+              <div class="tariffs-price">2 999 ₽ <small>/мес.*</small></div>
+              <a href="#" class="btn btn-block btn-sm btn-white">Подключить</a>
+            </div>
           </div>
-        </div>
-      </div><!-- /slide -->
+        </div><!-- /slide -->
 
-      <div class="swiper-slide">
-        <div class="tariffs-col last">
-          <div class="tariffs-header">Бесплатный</div>
-          @@loop('table-line.html', [
-            { "check": true },
-            { "check": true },
-            { "check": true },
-            { "check": true },
-            { "check": true },
-            { "title": "150 в день" },
-            { "title": "ограничены" },
-            { "times": true },
-            { "times": true },
-            { "times": true },
-            { "times": true, "last": true }
-          ])
-          <div class="tariffs-footer">
-            <div class="tariffs-price">Бесплатно</div>
-            <a href="#" class="btn btn-block btn-sm btn-white">Подключить</a>
+        <div class="swiper-slide">
+          <div class="tariffs-col last">
+            <div class="tariffs-header">Бесплатный</div>
+            @@loop('table-line.html', [
+              { "check": true },
+              { "check": true },
+              { "check": true },
+              { "check": true },
+              { "check": true },
+              { "title": "150 в день" },
+              { "title": "ограничены" },
+              { "times": true },
+              { "times": true },
+              { "times": true },
+              { "times": true, "last": true }
+            ])
+            <div class="tariffs-footer">
+              <div class="tariffs-price">Бесплатно</div>
+              <a href="#" class="btn btn-block btn-sm btn-white">Подключить</a>
+            </div>
           </div>
-        </div>
-      </div><!-- /slide -->
+        </div><!-- /slide -->
 
+      </div>
     </div>
   </div>
 </div><!-- /tariffs -->

@@ -66,7 +66,9 @@
     div:nth-child(1), div:nth-child(2), div:nth-child(3) { grid-area: auto; }
   }
   .knowledge {
+    padding-top: 32px;
     img { height: 240px; }
+    &-details { padding: 32px; }
     .pagetitle-head, .pagetitle-head.large { font-size: 32px; line-height: 36px; max-width: none; }
   }
 
@@ -74,7 +76,9 @@
   .projects {
     max-height: none;
     grid-template-rows: auto;
+    .knowledge { padding-top: 0; }
     div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4) { grid-area: auto; }
+    .pagetitle-head { font-size: 20px; line-height: 22px; }
   }
 
   /* brands_wrapper */
@@ -135,13 +139,100 @@
 @media screen and (max-width: 750px) {
   :root {
     --container: 'auto';
-    padding: 0 20px;
   }
+  body { font-size: 14px; line-height: 18px; }
+  .btn-mb-block { display: block; width: 100%; }
+  h1, .h1 { font-size: 40px; line-height: 40px; margin: 0 0 var(--gap); }
+  .container { padding: 0 20px; }
   
   .grid {
     @for $i from 1 through 6 {
-      &-tb-#{$i} { grid-template-columns: repeat($i, 1fr); }
+      &-mb-#{$i} { grid-template-columns: repeat($i, 1fr); }
     }
   }
+
+  /* header */
+  .header { padding: 16px 20px; }
+
+  /* firstscreen */
+  .firstscreen {
+    &-details { max-width: none; }
+    &-text { font-size: inherit; line-height: inherit; }
+    &-buttons {
+      display: block; margin: 0 0 32px;
+      .btn { margin: 0 0 var(--gap); display: block; width: 100%; }
+    }
+    &-partners { justify-content: center; }
+  } 
+
+  /* benefits */
+  .benefits {
+    div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4), div:nth-child(5) { grid-area: auto; }
+  }
+
+  /* numbers_section */
+  .numbers_section {
+    margin: 0 0 40px;
+    &-item {
+      background-position: 70% center;
+      padding: 43px 0;
+      &:nth-child(even) { background-position: 30% center; }
+    }
+  }
+
+  /* knowledges */
+  .knowledge {
+    display: block;
+    img { width: 100%; height: 200px; object-fit: cover; }
+  }
+
+  /* projects */
+  .projects .knowledge-img { max-width: none; min-width: 0; }
+
+  /* brands_wrapper */
+  .brands_wrapper-slider {
+    &::after, &::before { content: none; display: none; }
+  }
+
+  /* footer */
+  .footer { padding: 68px 0 0; }
+  .copyright {
+    padding-bottom: 8px;
+    &-nav {
+      flex-wrap: wrap;
+      ul { display: inline-flex; margin: 0 var(--gap) var(--gap) 0; }
+    }
+  }
+
+  /* read_wherever / service_card */
+  .read_wherever {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    margin: 0 0 40px;
+  }
+  .service_card {
+    &-title { font-size: 12px; line-height: 13px; }
+  }
+
+
+  /* tariffs */
+  .tariffs { margin: 0 0 var(--margin-section); }
+  .tariffs-first { display: none; grid-area: auto; }
+  .tariffs-slider { grid-area: auto; min-width: 0; padding: 0; }
+  .tariffs-header { padding: 32px var(--gap) var(--gap); margin: 0; }
+  .tariffs-col {
+    border-radius: var(--radius);
+    margin-top: 0;
+    &.first, &.last { border-radius: var(--radius); }
+  }
+  .tariffs-pro .tariffs-header { padding-top: 32px; }
+  .tariffs-pro .tariffs-footer { padding-bottom: 32px; }
+
+  /* chart_wrapper */
+  .chart_wrapper {
+    &>div { display: block; }
+    &>div:nth-child(1), &>div:nth-child(2) { grid-area: auto; }
+  }
+
 
 }

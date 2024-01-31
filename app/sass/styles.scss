@@ -322,7 +322,10 @@
   color: var(--color-dark-extra);
   font-weight: 700;
   margin: 0 0 120px;
-  .grid { grid-column-gap: 0; }
+  grid-column-gap: 0;
+  &-first { grid-area: 1 / 1 / 2 / 2; }
+  &-slider { grid-area: 1 / 2 / 2 / 5; }
+
   &-col {
     background: var(--color-white);
     border-radius: var(--radius);
@@ -598,7 +601,7 @@
   font-weight: 500;
   line-height: 18px;
   margin: 0 32px 0 0;
-  &:last-child { margin: 0; }
+  &:last-child { margin-right: 0; }
   li {
     margin: 0 12px 0 0;
     &:last-child { margin: 0; }

@@ -842,9 +842,13 @@ h2 span, .h2 span {
   color: var(--color-dark-extra);
   font-weight: 700;
   margin: 0 0 120px;
-}
-.tariffs .grid {
   grid-column-gap: 0;
+}
+.tariffs-first {
+  grid-area: 1/1/2/2;
+}
+.tariffs-slider {
+  grid-area: 1/2/2/5;
 }
 .tariffs-col {
   background: var(--color-white);
@@ -1231,7 +1235,7 @@ h2 span, .h2 span {
   margin: 0 32px 0 0;
 }
 .footicons:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 .footicons li {
   margin: 0 12px 0 0;
@@ -1383,8 +1387,14 @@ h2 span, .h2 span {
     grid-area: auto;
   }
 
+  .knowledge {
+    padding-top: 32px;
+  }
   .knowledge img {
     height: 240px;
+  }
+  .knowledge-details {
+    padding: 32px;
   }
   .knowledge .pagetitle-head, .knowledge .pagetitle-head.large {
     font-size: 32px;
@@ -1396,8 +1406,15 @@ h2 span, .h2 span {
     max-height: none;
     grid-template-rows: auto;
   }
+  .projects .knowledge {
+    padding-top: 0;
+  }
   .projects div:nth-child(1), .projects div:nth-child(2), .projects div:nth-child(3), .projects div:nth-child(4) {
     grid-area: auto;
+  }
+  .projects .pagetitle-head {
+    font-size: 20px;
+    line-height: 22px;
   }
 
   /* brands_wrapper */
@@ -1494,25 +1511,182 @@ h2 span, .h2 span {
 @media screen and (max-width: 750px) {
   :root {
     --container: "auto";
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .btn-mb-block {
+    display: block;
+    width: 100%;
+  }
+
+  h1, .h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 var(--gap);
+  }
+
+  .container {
     padding: 0 20px;
   }
 
-  .grid-tb-1 {
+  .grid-mb-1 {
     grid-template-columns: repeat(1, 1fr);
   }
-  .grid-tb-2 {
+  .grid-mb-2 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .grid-tb-3 {
+  .grid-mb-3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .grid-tb-4 {
+  .grid-mb-4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .grid-tb-5 {
+  .grid-mb-5 {
     grid-template-columns: repeat(5, 1fr);
   }
-  .grid-tb-6 {
+  .grid-mb-6 {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  /* header */
+  .header {
+    padding: 16px 20px;
+  }
+
+  /* firstscreen */
+  .firstscreen-details {
+    max-width: none;
+  }
+  .firstscreen-text {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .firstscreen-buttons {
+    display: block;
+    margin: 0 0 32px;
+  }
+  .firstscreen-buttons .btn {
+    margin: 0 0 var(--gap);
+    display: block;
+    width: 100%;
+  }
+  .firstscreen-partners {
+    justify-content: center;
+  }
+
+  /* benefits */
+  .benefits div:nth-child(1), .benefits div:nth-child(2), .benefits div:nth-child(3), .benefits div:nth-child(4), .benefits div:nth-child(5) {
+    grid-area: auto;
+  }
+
+  /* numbers_section */
+  .numbers_section {
+    margin: 0 0 40px;
+  }
+  .numbers_section-item {
+    background-position: 70% center;
+    padding: 43px 0;
+  }
+  .numbers_section-item:nth-child(even) {
+    background-position: 30% center;
+  }
+
+  /* knowledges */
+  .knowledge {
+    display: block;
+  }
+  .knowledge img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* projects */
+  .projects .knowledge-img {
+    max-width: none;
+    min-width: 0;
+  }
+
+  /* brands_wrapper */
+  .brands_wrapper-slider::after, .brands_wrapper-slider::before {
+    content: none;
+    display: none;
+  }
+
+  /* footer */
+  .footer {
+    padding: 68px 0 0;
+  }
+
+  .copyright {
+    padding-bottom: 8px;
+  }
+  .copyright-nav {
+    flex-wrap: wrap;
+  }
+  .copyright-nav ul {
+    display: inline-flex;
+    margin: 0 var(--gap) var(--gap) 0;
+  }
+
+  /* read_wherever / service_card */
+  .read_wherever {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+    margin: 0 0 40px;
+  }
+
+  .service_card-title {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  /* tariffs */
+  .tariffs {
+    margin: 0 0 var(--margin-section);
+  }
+
+  .tariffs-first {
+    display: none;
+    grid-area: auto;
+  }
+
+  .tariffs-slider {
+    grid-area: auto;
+    min-width: 0;
+    padding: 0;
+  }
+
+  .tariffs-header {
+    padding: 32px var(--gap) var(--gap);
+    margin: 0;
+  }
+
+  .tariffs-col {
+    border-radius: var(--radius);
+    margin-top: 0;
+  }
+  .tariffs-col.first, .tariffs-col.last {
+    border-radius: var(--radius);
+  }
+
+  .tariffs-pro .tariffs-header {
+    padding-top: 32px;
+  }
+
+  .tariffs-pro .tariffs-footer {
+    padding-bottom: 32px;
+  }
+
+  /* chart_wrapper */
+  .chart_wrapper > div {
+    display: block;
+  }
+  .chart_wrapper > div:nth-child(1), .chart_wrapper > div:nth-child(2) {
+    grid-area: auto;
   }
 }
