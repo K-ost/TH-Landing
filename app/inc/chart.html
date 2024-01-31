@@ -1,0 +1,27 @@
+<div class="grid grid-3 chart_wrapper">
+  <div class="chartbox">
+    <div class="chartbox-title"><b>100</b> публикаций/мес.</div>
+    <div class="chartline">
+      @@loop('chartline.html', [
+        { "num": 10 },
+        { "num": 25 },
+        { "num": 70 },
+        { "num": 10, "active": true },
+        { "num": 150 },
+        { "num": 200 },
+        { "num": 300 },
+        { "num": 500 },
+        { "num": 1000 },
+        { "num": 2000 }
+      ])
+    </div><!-- /chartline -->
+    <div class="tariffs-price">за 699 ₽ <small>/мес.*</small></div>
+    <a href="#" class="btn btn-white btn-sm">Подключить</a>
+  </div><!-- /chartbox -->
+
+  <div class="chartform">
+    <div class="h2 chartform-title">PostHunter и ещё 3+ сервиса уже включены в тариф <span>PRO</span></div>
+    <div class="tariffs-price">2 999 ₽ <small>/мес.*</small></div>
+    <a href="#" class="btn btn-white btn-block btn-sm">Подключить</a>
+  </div><!-- /chartform -->
+</div><!-- /chart_wrapper -->

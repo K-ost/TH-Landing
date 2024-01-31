@@ -1,42 +1,28 @@
 @@include('inc/header.html')
 
 
-<header class="header">
+<div class="firstscreen">
 	<div class="container">
-	
-		<div class="logo">
-			<a href="#"><img src="images/svg/logo.svg" alt=""></a>
+		<div class="firstscreen-details">
+			<div class="h1">Экосистема TargetHunter</div>
+			<div class="firstscreen-text">
+				Познакомьтесь с экосистемой сервисов для продвижения в социальных сетях</p>
+			</div>
+			<div class="firstscreen-buttons">
+				<button class="btn btn-primary">Начать работу</button>
+				<button class="btn btn-play"><span>Узнать об экосистеме за 120 секунд</span></button>
+			</div>
+			<div class="firstscreen-partners">
+				<a href="#" class="social_icon social_icon-vk"></a>
+				<a href="#" class="social_icon social_icon-ok"></a>
+				<span>официальный партнер</span>
+			</div>
 		</div>
-		
-		<nav class="navmenu">
-			<ul>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Меню</a></li>
-			</ul>
-			<div class="navbars"></div>
-		</nav>
-		
-		<div class="searchbox">
-			<form action="#" method="POST">
-				<input type="text" name="search" class="input searchbox_input" placeholder="Поиск">
-				<input type="submit" class="btn searchbox_btn">
-			</form>
-		</div><!-- #Search -->
-
-		<a href="#modal" class="showmodal">Show modal</a>
-		
-		<div class="phonebox"><a href="tel:+74996775563">+7 495 123-45-67</a></div>
 	</div>
-</header><!-- /header -->
+</div><!-- /firstscreen -->
 
 
 <div class="container">
-
-	<button class="btn btn-primary">Начать работу</button>
-	<button class="btn btn-play"><span>Узнать об экосистеме за 120 секунд</span></button>
 
 	@@include('inc/numbers.html', { "list": [
 		{ "title": "900 000+", "text": "пользователей сервиса" },
@@ -201,7 +187,9 @@
 		<div class="tab-pane fade" id="second-tab" role="tabpanel">
 			@@include('inc/table2.html')
 		</div>
-		<div class="tab-pane fade" id="third-tab" role="tabpanel">3</div>
+		<div class="tab-pane fade" id="third-tab" role="tabpanel">
+			@@include('inc/chart.html')
+		</div>
 	</div>
 
 

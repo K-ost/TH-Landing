@@ -18,43 +18,50 @@
 
 <body>
 
-
 <header class="header">
-	<div class="container">
-	
-		<div class="logo">
+	<div class="wrapper">
+		<div class="header-logo">
 			<a href="#"><img src="images/svg/logo.svg" alt=""></a>
 		</div>
-		
-		<nav class="navmenu">
+		<nav class="header-nav">
 			<ul>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Меню</a></li>
+				<li><a href="#">Сервисы</a></li>
+				<li><a href="#">Обучение</a></li>
+				<li><a href="#">Услуги</a></li>
+				<li><a href="#">Выгода</a></li>
+				<li><a href="#">Блог</a></li>
+				<li><a href="#">Тарифы</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
-			<div class="navbars"></div>
+			<button class="btn btn-sm btn-primary btn-select"><span>Начать работу</span></button>
 		</nav>
-		
-		<div class="searchbox">
-			<form action="#" method="POST">
-				<input type="text" name="search" class="input searchbox_input" placeholder="Поиск">
-				<input type="submit" class="btn searchbox_btn">
-			</form>
-		</div><!-- #Search -->
-
-		<a href="#modal" class="showmodal">Show modal</a>
-		
-		<div class="phonebox"><a href="tel:+74996775563">+7 495 123-45-67</a></div>
+		<button class="header-navbar"></button>
 	</div>
 </header><!-- /header -->
 
 
-<div class="container">
+<div class="firstscreen">
+	<div class="container">
+		<div class="firstscreen-details">
+			<div class="h1">Экосистема TargetHunter</div>
+			<div class="firstscreen-text">
+				Познакомьтесь с экосистемой сервисов для продвижения в социальных сетях</p>
+			</div>
+			<div class="firstscreen-buttons">
+				<button class="btn btn-primary">Начать работу</button>
+				<button class="btn btn-play"><span>Узнать об экосистеме за 120 секунд</span></button>
+			</div>
+			<div class="firstscreen-partners">
+				<a href="#" class="social_icon social_icon-vk"></a>
+				<a href="#" class="social_icon social_icon-ok"></a>
+				<span>официальный партнер</span>
+			</div>
+		</div>
+	</div>
+</div><!-- /firstscreen -->
 
-	<button class="btn btn-primary">Начать работу</button>
-	<button class="btn btn-play"><span>Узнать об экосистеме за 120 секунд</span></button>
+
+<div class="container">
 
 	<div class="grid grid-3 numbers_section ">
   
@@ -305,6 +312,33 @@
 <div class="brands_wrapper">
   <div class="container">
     <div class="h2">Бренды, которые нам <span>доверяют</span></div>
+    <div class="brands_wrapper-slider">
+      <div class="swiper" id="brands_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/mailru.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dns.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/point.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/bitrix1s.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/tinkoff.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/mailru.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/dns.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div><!-- /brands_wrapper -->
 
@@ -961,7 +995,54 @@
   </div>
 </div><!-- /tariffs -->
 		</div>
-		<div class="tab-pane fade" id="third-tab" role="tabpanel">3</div>
+		<div class="tab-pane fade" id="third-tab" role="tabpanel">
+			<div class="grid grid-3 chart_wrapper">
+  <div class="chartbox">
+    <div class="chartbox-title"><b>100</b> публикаций/мес.</div>
+    <div class="chartline">
+      <div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">10</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">25</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">70</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point active"></div>
+  <div class="chartline-num">10</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">150</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">200</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">300</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">500</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">1000</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
+  <div class="chartline-num">2000</div>
+</div><!-- /chartline-item -->
+    </div><!-- /chartline -->
+    <div class="tariffs-price">за 699 ₽ <small>/мес.*</small></div>
+    <a href="#" class="btn btn-white btn-sm">Подключить</a>
+  </div><!-- /chartbox -->
+
+  <div class="chartform">
+    <div class="h2 chartform-title">PostHunter и ещё 3+ сервиса уже включены в тариф <span>PRO</span></div>
+    <div class="tariffs-price">2 999 ₽ <small>/мес.*</small></div>
+    <a href="#" class="btn btn-white btn-block btn-sm">Подключить</a>
+  </div><!-- /chartform -->
+</div><!-- /chart_wrapper -->
+		</div>
 	</div>
 
 
