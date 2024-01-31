@@ -31,7 +31,7 @@
     cursor: pointer;
     display: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 auto;
     outline: none;
     width: 24px;
     height: 24px;
@@ -136,7 +136,7 @@
 .benefits {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  //grid-template-rows: repeat(2, 1fr);
   grid-column-gap: var(--gap);
   grid-row-gap: var(--gap);
   margin: 0 0 var(--margin-section);
@@ -230,7 +230,7 @@
   max-height: 604px;
   margin: 0 0 var(--margin-huge);
   .knowledge { padding-top: 48px; }
-  .knowledge-img { max-width: 200px; }
+  .knowledge-img { max-width: 200px; min-width: 200px; }
   .whitebox-text { font-size: 14px; line-height: 18px; }
   div:nth-child(1) { grid-area: 1 / 1 / 9 / 2; }
   div:nth-child(2) { grid-area: 9 / 1 / 13 / 2; }
@@ -294,7 +294,7 @@
 .chats_wrapper {
   align-items: center;
   display: flex;
-  margin: 0 0 120px;
+  margin: 0 0 var(--margin-section);
   .h2 { margin: 0 var(--gap) 0 0; max-width: 276px; }
   .grid { grid-column-gap: var(--gap-sm); }
 }
@@ -619,11 +619,4 @@
 
 
 
-
-
-
-
-
-
-
-
+@import 'resp.scss'

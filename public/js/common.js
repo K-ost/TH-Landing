@@ -9,12 +9,10 @@ $(function() {
 const reviewsSlider = new Swiper("#reviews_slider", {
   loop: false,
   slidesPerView: 1,
-  spaceBetween: 32,
+  spaceBetween: 16,
   breakpoints: {
-    900: {
-      slidesPerView: 'auto',
-      centeredSlides: true,
-    }
+    720: { slidesPerView: 2 },
+    900: { slidesPerView: 'auto', spaceBetween: 32, centeredSlides: true },
   }
 })
 

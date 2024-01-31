@@ -1,7 +1,5 @@
-<svg width="81" height="80" viewBox="0 0 81 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="icon_post">
-<path d="M0.666656 40C0.666656 17.9086 18.5753 0 40.6667 0C62.758 0 80.6667 17.9086 80.6667 40V80H40.6667C18.5753 80 0.666656 62.0914 0.666656 40Z" fill="#F13047"/>
-<path id="Rectangle 322" d="M32.6667 26C32.6667 23.7909 34.4575 22 36.6667 22H44.6667C46.8758 22 48.6667 23.7909 48.6667 26V31H32.6667V26Z" stroke="white" stroke-width="4"/>
-<rect id="Rectangle 321" x="21.6667" y="31" width="38" height="25" rx="3" stroke="white" stroke-width="4" stroke-linejoin="round"/>
-</g>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 60C20 37.9086 37.9086 20 60 20C82.0914 20 100 37.9086 100 60V100H60C37.9086 100 20 82.0914 20 60Z" fill="#F13047"/>
+<path d="M52 46C52 43.7909 53.7909 42 56 42H64C66.2091 42 68 43.7909 68 46V51H52V46Z" stroke="white" stroke-width="4"/>
+<rect x="41" y="51" width="38" height="25" rx="3" stroke="white" stroke-width="4" stroke-linejoin="round"/>
 </svg>

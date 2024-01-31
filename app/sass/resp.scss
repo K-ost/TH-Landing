@@ -1,0 +1,147 @@
+
+/* middle */
+@media screen and (max-width: 1240px) {
+  :root {
+    --container: 992px;
+  }
+}
+
+
+/* tablet */
+@media screen and (max-width: 1020px) {
+  :root {
+    --container: 720px;
+    --margin-section: 64px;
+    --margin-huge: 80px;
+    --gap: 16px;
+  }
+  
+  .grid {
+    @for $i from 1 through 6 {
+      &-tb-#{$i} { grid-template-columns: repeat($i, 1fr); }
+    }
+  }
+
+  /* header */
+  .header-nav { display: none; }
+  .header-navbar { display: block; }
+
+  /* pagetitle */
+  .pagetitle {
+    margin: 0 0 40px;
+    &-head { font-size: 32px; line-height: 36px; margin: 0 0 16px; }
+    &-text { font-size: 16px; line-height: 20px; }
+  }
+
+  /* questionbox */
+  .questionbox {
+    padding: 40px;
+    &-title { font-size: 32px; line-height: 36px; }
+    &-details { display: block; }
+    &-text { font-size: 16px; line-height: 20px; margin: 0 0 40px; }
+    .btn { width: 100%; }
+  }
+
+  /* whitebox */
+  .whitebox {
+    font-size: 14px; line-height: 18px;
+    .pagetitle-head { font-size: 20px; line-height: 22px; }
+  }
+
+  /* soultion */
+  .soultion { padding-bottom: 120px; }
+
+  /* numbers_section */
+  .numbers_section {
+    margin: 0 0 50px;
+    &-item { background-size: 180px; }
+    &-title { font-size: 32px; line-height: 36px; margin: 0 0 16px; }
+    &-text { font-size: 16px; line-height: 20px; }
+    &-large &-title { font-size: 32px; line-height: 36px; }
+  }
+
+  /* knowledges */
+  .knowledges {
+    grid-row-gap: var(--gap);
+    div:nth-child(1), div:nth-child(2), div:nth-child(3) { grid-area: auto; }
+  }
+  .knowledge {
+    img { height: 240px; }
+    .pagetitle-head, .pagetitle-head.large { font-size: 32px; line-height: 36px; max-width: none; }
+  }
+
+  // projects
+  .projects {
+    max-height: none;
+    grid-template-rows: auto;
+    div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4) { grid-area: auto; }
+  }
+
+  /* brands_wrapper */
+  .brands_wrapper {
+    padding: 40px 0;
+    .container { display: block; }
+    .h2 { text-align: center; max-width: none; }
+  }
+
+  /* reviews */
+  .reviews {
+    .swiper-slide {
+      width: auto; display: block;
+      .review, &-active .review {
+        font-size: 16px; line-height: 20px;
+        &-card {
+          margin: 0 0 32px;
+          &_img { min-width: 80px; max-width: 80px; height: 80px; margin: 0 24px 0 0; }
+          &_name { font-size: 20px; line-height: 25px; }
+          &_role { font-size: 14px; line-height: 18px; }
+        }
+        &-text { margin: 0 0 32px; }
+      }
+    }
+  }
+
+  /* tabsbox */
+  .tabsbox { margin: 0 0 32px; }
+
+  /* chats_wrapper */
+  .chats_wrapper {
+    display: block;
+    .h2 { font-size: 24px; line-height: 26px; margin: 0 0 16px; max-width: none; text-align: center; }
+  }
+
+  /* chartform */
+  .chartform {
+    padding: 32px;
+    .h2 { font-size: 24px; line-height: 26px; margin: 0 0 32px; }
+  }
+
+  /* about_section */
+  .about_section {
+    background: #D4DCF8;
+    padding: 32px;
+    &-text { font-size: 14px; line-height: 18px; margin: 0 0 32px; max-width: none; }
+  }
+
+  /* copyright */
+  .copyright { display: block; }
+  .copyright-text { margin-bottom: var(--gap); }
+
+
+}
+
+
+/* mobile */
+@media screen and (max-width: 750px) {
+  :root {
+    --container: 'auto';
+    padding: 0 20px;
+  }
+  
+  .grid {
+    @for $i from 1 through 6 {
+      &-tb-#{$i} { grid-template-columns: repeat($i, 1fr); }
+    }
+  }
+
+}
