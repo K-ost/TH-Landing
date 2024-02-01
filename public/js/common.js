@@ -34,6 +34,18 @@ const tariffsSlider = new Swiper(".tariffs-slider .swiper", {
   breakpoints: {
     480: { slidesPerView: 2 },
     680: { slidesPerView: 3, spaceBetween: 0 },
-    900: { slidesPerView: 3 },
+    900: { slidesPerView: 3, spaceBetween: 0 },
+  },
+  pagination: {
+    el: '.tariffs-slider .swiper-pagination'
   }
 })
+
+
+if ( document.documentElement.clientWidth < 1020 ) {
+  document.querySelector('.header-nav').classList.add(['offcanvas'])
+  document.querySelector('.header-nav').classList.add('offcanvas-start')
+} else {
+  document.querySelector('.header-nav').classList.remove(['offcanvas'])
+  document.querySelector('.header-nav').classList.remove('offcanvas-start')
+}

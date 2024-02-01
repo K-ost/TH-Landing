@@ -21,17 +21,17 @@
           <div class="tariffs-col first">
             <div class="tariffs-header">Основной</div>
             @@loop('table-line.html', [
-              { "check": true },
-              { "check": true },
-              { "check": true },
-              { "check": true },
-              { "check": true },
-              { "title": "150 000 в месяц" },
-              { "check": true },
-              { "check": true },
-              { "check": true },
-              { "check": true },
-              { "check": true, "last": true }
+              { "check": true, "key": "Рассылки" },
+              { "check": true, "key": "Мини-лендинги" },
+              { "check": true, "key": "Аналитика воронок" },
+              { "check": true, "key": "Уведомления из сообщества" },
+              { "check": true, "key": "Конструктор чат-ботов" },
+              { "title": "150 000 в месяц", "key": "Баланс сообщений" },
+              { "check": true, "key": "Готовые шаблоны ботов" },
+              { "check": true, "key": "Рассылка по событиям" },
+              { "check": true, "key": "Интеграции" },
+              { "check": true, "key": "Удаление участников" },
+              { "check": true, "last": true, "key": "Авто-удаление собачек" }
             ])
             <div class="tariffs-footer">
               <div class="tariffs-price">699 ₽ <small>/мес.*</small></div>
@@ -44,17 +44,17 @@
           <div class="tariffs-col tariffs-pro">
             <div class="tariffs-header">Тариф Pro (Все сервисы)</div>
             @@loop('table-line.html', [
-              { "check_light": true },
-              { "check_light": true },
-              { "check_light": true },
-              { "check_light": true },
-              { "check_light": true },
-              { "title": "Безлимит" },
-              { "check_light": true },
-              { "check_light": true },
-              { "check_light": true },
-              { "check_light": true },
-              { "check_light": true, "last": true }
+              { "check_light": true, "key": "Рассылки" },
+              { "check_light": true, "key": "Мини-лендинги" },
+              { "check_light": true, "key": "Аналитика воронок" },
+              { "check_light": true, "key": "Уведомления из сообщества" },
+              { "check_light": true, "key": "Конструктор чат-ботов" },
+              { "title": "Безлимит", "key": "Баланс сообщений" },
+              { "check_light": true, "key": "Готовые шаблоны ботов" },
+              { "check_light": true, "key": "Рассылка по событиям" },
+              { "check_light": true, "key": "Интеграции" },
+              { "check_light": true, "key": "Удаление участников" },
+              { "check_light": true, "last": true, "key": "Авто-удаление собачек" }
             ])
             <div class="tariffs-footer">
               <div class="tariffs-price">2 999 ₽ <small>/мес.*</small></div>
@@ -67,17 +67,17 @@
           <div class="tariffs-col last">
             <div class="tariffs-header">Бесплатный</div>
             @@loop('table-line.html', [
-              { "check": true },
-              { "check": true },
-              { "check": true },
-              { "check": true },
-              { "check": true },
-              { "title": "150 в день" },
-              { "title": "ограничены" },
-              { "times": true },
-              { "times": true },
-              { "times": true },
-              { "times": true, "last": true }
+              { "check": true, "key": "Рассылки" },
+              { "check": true, "key": "Мини-лендинги" },
+              { "check": true, "key": "Аналитика воронок" },
+              { "check": true, "key": "Уведомления из сообщества" },
+              { "check": true, "key": "Конструктор чат-ботов" },
+              { "title": "150 в день", "key": "Баланс сообщений" },
+              { "title": "ограничены", "key": "Готовые шаблоны ботов" },
+              { "times": true, "key": "Рассылка по событиям" },
+              { "times": true, "key": "Интеграции" },
+              { "times": true, "key": "Удаление участников" },
+              { "times": true, "last": true, "key": "Авто-удаление собачек" }
             ])
             <div class="tariffs-footer">
               <div class="tariffs-price">Бесплатно</div>
@@ -87,6 +87,8 @@
         </div><!-- /slide -->
 
       </div>
-    </div>
+      <div class="swiper-pagination"></div>
+    </div><!-- /swiper -->
+    <div class="tariffs-note">*можно оплатить бонусами TargetHunter</div>
   </div>
 </div><!-- /tariffs -->

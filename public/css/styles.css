@@ -235,12 +235,26 @@ h2 span, .h2 span {
   display: block;
   width: 100%;
 }
+.btn:hover {
+  background: var(--color-light-blue);
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+}
 .btn-primary {
   background: var(--color-blue);
   color: var(--color-white);
 }
+.btn-primary:hover {
+  background: var(--color-blue-hover);
+  color: var(--color-white);
+}
 .btn-white {
   background: var(--color-body);
+  border-color: transparent;
+  color: var(--color-blue);
+}
+.btn-white:hover {
+  background: var(--color-light-blue);
   border-color: transparent;
   color: var(--color-blue);
 }
@@ -361,6 +375,7 @@ h2 span, .h2 span {
   font-size: 14px;
   line-height: 18px;
   margin: 0 12px 12px 0;
+  text-align: center;
 }
 .tabsbox li:last-child {
   margin-right: 0;
@@ -841,7 +856,7 @@ h2 span, .h2 span {
 .tariffs {
   color: var(--color-dark-extra);
   font-weight: 700;
-  margin: 0 0 120px;
+  margin: 0 0 var(--margin-section);
   grid-column-gap: 0;
 }
 .tariffs-first {
@@ -849,6 +864,13 @@ h2 span, .h2 span {
 }
 .tariffs-slider {
   grid-area: 1/2/2/5;
+}
+.tariffs .swiper {
+  margin-bottom: 32px;
+}
+.tariffs-note {
+  color: var(--color-semidark);
+  font-weight: 400;
 }
 .tariffs-col {
   background: var(--color-white);
@@ -879,6 +901,11 @@ h2 span, .h2 span {
 }
 .tariffs-item.last {
   border-bottom-color: transparent !important;
+}
+.tariffs-item_key {
+  font-weight: 400;
+  display: none;
+  margin: 0 8px 0 0;
 }
 .tariffs-first {
   padding-top: 132px;
@@ -921,6 +948,35 @@ h2 span, .h2 span {
 }
 .tariffs-pro .tariffs-price small {
   color: #E8EAED;
+}
+.tariffs .swiper-pagination {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  width: auto;
+  margin: 40px 0 0;
+}
+.tariffs .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: 0;
+  margin: 0 6px !important;
+  opacity: 1 !important;
+}
+.tariffs .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #65A2FE;
+  transition: var(--anim);
+  transform: scale(0.7);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.tariffs .swiper-pagination-bullet-active::after {
+  transform: none;
+  background: var(--color-blue);
 }
 
 /* reviews */
@@ -1161,6 +1217,9 @@ h2 span, .h2 span {
   line-height: 18px;
   padding: 112px 0 0;
 }
+.footer .grid {
+  grid-row-gap: 0;
+}
 .footer-logo {
   margin: 0 0 40px;
 }
@@ -1173,7 +1232,7 @@ h2 span, .h2 span {
   margin: 0 0 20px;
 }
 .footer-nav {
-  margin: 0 0 var(--gap);
+  margin: 0 0 32px;
 }
 .footer-nav li {
   margin: 0 0 12px;
@@ -1266,6 +1325,20 @@ h2 span, .h2 span {
   background-image: url("../images/svg/icon-dzen.svg");
 }
 
+/* Modal */
+.modal-content {
+  background: var(--color-white);
+  border: 0;
+  border-radius: var(--radius);
+  padding: 32px;
+}
+.modal .btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  outline: none;
+}
+
 /* middle */
 @media screen and (max-width: 1240px) {
   :root {
@@ -1302,7 +1375,27 @@ h2 span, .h2 span {
 
   /* header */
   .header-nav {
-    display: none;
+    max-width: 300px;
+    display: block;
+  }
+  .header-nav ul {
+    display: block;
+  }
+  .header-nav ul li {
+    border-bottom: 1px solid var(--color-grey-extra-light);
+    margin: 0;
+  }
+  .header-nav ul li a {
+    display: block;
+    padding: 16px 24px;
+  }
+
+  .header-btn {
+    padding: 16px 24px;
+    width: 100%;
+  }
+  .header-btn .btn {
+    width: 100%;
   }
 
   .header-navbar {
@@ -1570,6 +1663,15 @@ h2 span, .h2 span {
   }
 
   /* firstscreen */
+  .firstscreen {
+    background: url("../images/circle.png") center 0/contain no-repeat;
+    margin: 0 0 var(--margin-section);
+    padding-top: 300px;
+  }
+  .firstscreen .container {
+    min-height: 0;
+    display: block;
+  }
   .firstscreen-details {
     max-width: none;
   }
@@ -1607,6 +1709,15 @@ h2 span, .h2 span {
     background-position: 30% center;
   }
 
+  /* tabsbox */
+  .tabsbox {
+    display: block;
+  }
+
+  .tabsbox li {
+    margin: 0 0 8px;
+  }
+
   /* knowledges */
   .knowledge {
     display: block;
@@ -1632,6 +1743,9 @@ h2 span, .h2 span {
   /* footer */
   .footer {
     padding: 68px 0 0;
+  }
+  .footer_section-contacts {
+    grid-area: 1/1/2/2;
   }
 
   .copyright {
@@ -1677,6 +1791,10 @@ h2 span, .h2 span {
 
   .tariffs-pro .tariffs-footer {
     padding-bottom: 32px;
+  }
+
+  .tariffs-item_key {
+    display: block;
   }
 
   /* chart_wrapper */

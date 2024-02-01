@@ -1,4 +1,5 @@
 <div class="tariffs-item@@if(context.last){ last}">
+  @@if(context.key){<div class="tariffs-item_key">@@key</div>}
   @@if(context.title){@@title}
   @@if(context.check){<div class="iconbox iconbox_check"></div>}
   @@if(context.check_light){<div class="iconbox iconbox_check-light"></div>}

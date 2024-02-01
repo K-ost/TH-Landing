@@ -23,7 +23,7 @@
 		<div class="header-logo">
 			<a href="#"><img src="images/svg/logo.svg" alt=""></a>
 		</div>
-		<nav class="header-nav">
+		<nav class="header-nav" id="navmenu">
 			<ul>
 				<li><a href="#">Сервисы</a></li>
 				<li><a href="#">Обучение</a></li>
@@ -33,9 +33,11 @@
 				<li><a href="#">Тарифы</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<button class="btn btn-sm btn-primary btn-select"><span>Начать работу</span></button>
+			<div class="header-btn">
+				<button class="btn btn-sm btn-primary btn-select"><span>Начать работу</span></button>
+			</div>
 		</nav>
-		<button class="header-navbar"></button>
+		<button class="header-navbar" data-bs-toggle="offcanvas" data-bs-target="#navmenu"></button>
 	</div>
 </header><!-- /header -->
 
@@ -84,7 +86,7 @@
   <div class="questionbox-title">Впечатляет?</div>
   <div class="questionbox-details">
     <div class="questionbox-text">Начните пользоваться сервисом прямо сейчас и сами оцените удобство и функциональность TargetHunter!</div>
-    <button class="btn btn-white btn-more"><span>Начать пользоваться</span></button>
+    <button class="btn btn-white btn-more" data-bs-toggle="modal" data-bs-target="#modal"><span>Начать пользоваться</span></button>
   </div>
 </div><!-- /questionbox -->
 	
@@ -125,7 +127,7 @@
   <div class="questionbox-title">Есть вопросы?</div>
   <div class="questionbox-details">
     <div class="questionbox-text">Cпециалисты поддержки знают о сервисах всё. Заполните форму, с радостью ответим на интересующие вопросы</div>
-    <button class="btn btn-white btn-more"><span>Задать вопрос</span></button>
+    <button class="btn btn-white btn-more" data-bs-toggle="modal" data-bs-target="#modal"><span>Задать вопрос</span></button>
   </div>
 </div><!-- /questionbox -->
 
@@ -162,7 +164,7 @@
   <div class="questionbox-title">Есть вопросы?</div>
   <div class="questionbox-details">
     <div class="questionbox-text">Служба заботы сможет подобрать наиболее выгодный способ работы с TH именно для вас. Заполните форму, с радостью ответим на все интересующие вопросы</div>
-    <button class="btn btn-white btn-more"><span>Задать вопрос</span></button>
+    <button class="btn btn-white btn-more" data-bs-toggle="modal" data-bs-target="#modal"><span>Задать вопрос</span></button>
   </div>
 </div><!-- /questionbox -->
 
@@ -243,7 +245,7 @@
   <div class="questionbox-title">Есть вопросы?</div>
   <div class="questionbox-details">
     <div class="questionbox-text">Cпециалисты службы заботы помогут разобраться. Заполните форму, с радостью ответим на все интересующие вопросы</div>
-    <button class="btn btn-white btn-more"><span>Задать вопрос</span></button>
+    <button class="btn btn-white btn-more" data-bs-toggle="modal" data-bs-target="#modal"><span>Задать вопрос</span></button>
   </div>
 </div><!-- /questionbox -->
 
@@ -491,7 +493,7 @@
   <div class="pagetitle-head">У нас есть <span>идеальный</span> тариф<br> для каждого</div>
   <div class="pagetitle-text">Выберите интересующий сервис<br> <small>Если вам нужны все сервисы сразу, идеальный выбор — <b>Тариф Pro</b></small></div>
 </div><!-- /pagetitle -->
-
+	
 	<ul class="tabsbox nav nav-tabs">
 		<li role="presentation"><a href="#" data-bs-toggle="tab" data-bs-target="#first-tab" class="active">Поиск аудитории ВК и ОК</a></li>
 		<li role="presentation"><a href="#" data-bs-toggle="tab" data-bs-target="#second-tab">Конструктор чат-ботов BotHunter</a></li>
@@ -503,46 +505,55 @@
 			<div class="tariffs grid grid-4 grid-tb-1">
   <div class="tariffs-first">
     <div class="tariffs-item">
+  
   Стандартные инструменты
   
   
   
 </div><div class="tariffs-item">
+  
   Одновременно задач
   
   
   
 </div><div class="tariffs-item">
+  
   Скорость парсинга
   
   
   
 </div><div class="tariffs-item">
+  
   PRO-базы и инструменты ВК
   
   
   
 </div><div class="tariffs-item">
+  
   Автоматизация парсинга
   
   
   
 </div><div class="tariffs-item">
+  
   Новые вступления и друзья
   
   
   
 </div><div class="tariffs-item">
+  
   Одновременно авто-задач
   
   
   
 </div><div class="tariffs-item">
+  
   Авто-задачи без задержки
   
   
   
 </div><div class="tariffs-item last">
+  
   Поиск и анализ меломанов
   
   
@@ -557,46 +568,55 @@
           <div class="tariffs-col first">
             <div class="tariffs-header">Основной</div>
             <div class="tariffs-item">
+  <div class="tariffs-item_key">Стандартные инструменты</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Одновременно задач</div>
   2
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Скорость парсинга</div>
   x5
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">PRO-базы и инструменты ВК</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Автоматизация парсинга</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Новые вступления и друзья</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Одновременно авто-задач</div>
   1
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Авто-задачи без задержки</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item last">
+  <div class="tariffs-item_key">Поиск и анализ меломанов</div>
   
   <div class="iconbox iconbox_check"></div>
   
@@ -613,46 +633,55 @@
           <div class="tariffs-col tariffs-pro">
             <div class="tariffs-header">Тариф Pro (Все сервисы)</div>
             <div class="tariffs-item">
+  <div class="tariffs-item_key">Стандартные инструменты</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Одновременно задач</div>
   5
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Скорость парсинга</div>
   x10
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">PRO-базы и инструменты ВК</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Автоматизация парсинга</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Новые вступления и друзья</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Одновременно авто-задач</div>
   3
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Авто-задачи без задержки</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item last">
+  <div class="tariffs-item_key">Поиск и анализ меломанов</div>
   PRO базы
   
   
@@ -669,46 +698,55 @@
           <div class="tariffs-col last">
             <div class="tariffs-header">Бесплатный</div>
             <div class="tariffs-item">
+  <div class="tariffs-item_key">Стандартные инструменты</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Одновременно задач</div>
   2
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Скорость парсинга</div>
   x5
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">PRO-базы и инструменты ВК</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Автоматизация парсинга</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Новые вступления и друзья</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Одновременно авто-задач</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Авто-задачи без задержки</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item last">
+  <div class="tariffs-item_key">Поиск и анализ меломанов</div>
   
   <div class="iconbox iconbox_check"></div>
   
@@ -722,7 +760,10 @@
         </div><!-- /slide -->
 
       </div>
-    </div>
+      <div class="swiper-pagination"></div>
+    </div><!-- /swiper -->
+
+    <div class="tariffs-note">*можно оплатить бонусами TargetHunter</div>
   </div>
 </div><!-- /tariffs -->
 		</div>
@@ -730,56 +771,67 @@
 			<div class="tariffs grid grid-4 grid-tb-1">
   <div class="tariffs-first">
     <div class="tariffs-item">
+  
   Рассылки
   
   
   
 </div><div class="tariffs-item">
+  
   Мини-лендинги
   
   
   
 </div><div class="tariffs-item">
+  
   Аналитика воронок
   
   
   
 </div><div class="tariffs-item">
+  
   Уведомления из сообщества
   
   
   
 </div><div class="tariffs-item">
+  
   Конструктор чат-ботов
   
   
   
 </div><div class="tariffs-item">
+  
   Баланс сообщений
   
   
   
 </div><div class="tariffs-item">
+  
   Готовые шаблоны ботов
   
   
   
 </div><div class="tariffs-item">
+  
   Рассылка по событиям
   
   
   
 </div><div class="tariffs-item">
+  
   Интеграции
   
   
   
 </div><div class="tariffs-item">
+  
   Удаление участников
   
   
   
 </div><div class="tariffs-item last">
+  
   Авто-удаление собачек
   
   
@@ -793,56 +845,67 @@
           <div class="tariffs-col first">
             <div class="tariffs-header">Основной</div>
             <div class="tariffs-item">
+  <div class="tariffs-item_key">Рассылки</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Мини-лендинги</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Аналитика воронок</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Уведомления из сообщества</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Конструктор чат-ботов</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Баланс сообщений</div>
   150 000 в месяц
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Готовые шаблоны ботов</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Рассылка по событиям</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Интеграции</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Удаление участников</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item last">
+  <div class="tariffs-item_key">Авто-удаление собачек</div>
   
   <div class="iconbox iconbox_check"></div>
   
@@ -859,56 +922,67 @@
           <div class="tariffs-col tariffs-pro">
             <div class="tariffs-header">Тариф Pro (Все сервисы)</div>
             <div class="tariffs-item">
+  <div class="tariffs-item_key">Рассылки</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Мини-лендинги</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Аналитика воронок</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Уведомления из сообщества</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Конструктор чат-ботов</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Баланс сообщений</div>
   Безлимит
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Готовые шаблоны ботов</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Рассылка по событиям</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Интеграции</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Удаление участников</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
   
 </div><div class="tariffs-item last">
+  <div class="tariffs-item_key">Авто-удаление собачек</div>
   
   
   <div class="iconbox iconbox_check-light"></div>
@@ -925,56 +999,67 @@
           <div class="tariffs-col last">
             <div class="tariffs-header">Бесплатный</div>
             <div class="tariffs-item">
+  <div class="tariffs-item_key">Рассылки</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Мини-лендинги</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Аналитика воронок</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Уведомления из сообщества</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Конструктор чат-ботов</div>
   
   <div class="iconbox iconbox_check"></div>
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Баланс сообщений</div>
   150 в день
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Готовые шаблоны ботов</div>
   ограничены
   
   
   
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Рассылка по событиям</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Интеграции</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item">
+  <div class="tariffs-item_key">Удаление участников</div>
   
   
   
   <div class="iconbox iconbox_close"></div>
 </div><div class="tariffs-item last">
+  <div class="tariffs-item_key">Авто-удаление собачек</div>
   
   
   
@@ -988,7 +1073,9 @@
         </div><!-- /slide -->
 
       </div>
-    </div>
+      <div class="swiper-pagination"></div>
+    </div><!-- /swiper -->
+    <div class="tariffs-note">*можно оплатить бонусами TargetHunter</div>
   </div>
 </div><!-- /tariffs -->
 		</div>
@@ -1047,7 +1134,7 @@
   <div class="questionbox-title">Есть вопросы?</div>
   <div class="questionbox-details">
     <div class="questionbox-text">Служба заботы поможет подобрать наиболее выгодный тариф именно для вас. Заполните форму</div>
-    <button class="btn btn-white btn-more"><span>Задать вопрос</span></button>
+    <button class="btn btn-white btn-more" data-bs-toggle="modal" data-bs-target="#modal"><span>Задать вопрос</span></button>
   </div>
 </div><!-- /questionbox -->
 
@@ -1171,7 +1258,7 @@
 	<div class="container">
 		
 		<div class="grid grid-4 grid-mb-1">
-			<div>
+			<div class="footer_section">
 				<div class="footer-title">Основные сервисы</div>
 				<ul class="footer-nav">
 					<li><a href="#">Поиск ЦА</a></li>
@@ -1192,7 +1279,7 @@
 				</ul>
 			</div>
 
-			<div>
+			<div class="footer_section">
 				<div class="footer-title">Обучение</div>
 				<ul class="footer-nav">
 					<li><a href="#">Академия TH</a></li>
@@ -1214,7 +1301,7 @@
 				</ul>
 			</div>
 
-			<div>
+			<div class="footer_section">
 				<div class="footer-title">Полезно</div>
 				<ul class="footer-nav">
 					<li><a href="#">Договор-оферта</a></li>
@@ -1227,7 +1314,7 @@
 				</ul>
 			</div>
 
-			<div>
+			<div class="footer_section-contacts">
 				<div class="footer-logo">
 					<a href="#"><img src="images/svg/logo.svg" alt=""></a>
 				</div>
@@ -1277,6 +1364,16 @@
 	</div>
 </footer><!-- /footer -->
 
+
+<div class="modal" id="modal">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			<div class="h2">Modal title</div>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi a quidem provident rerum corrupti voluptatum quas odit, sunt reprehenderit qui hic cumque natus reiciendis ratione dolorum consequatur maxime error sapiente.
+		</div>
+	</div>
+</div><!-- /modal -->
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

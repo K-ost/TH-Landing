@@ -20,15 +20,15 @@
           <div class="tariffs-col first">
             <div class="tariffs-header">Основной</div>
             @@loop('table-line.html', [
-              { "check": true },
-              { "title": "2" },
-              { "title": "x5" },
-              { "times": true },
-              { "check": true },
-              { "check": true },
-              { "title": "1" },
-              { "times": true },
-              { "check": true, "last": true }
+              { "check": true, "key": "Стандартные инструменты" },
+              { "title": "2", "key": "Одновременно задач" },
+              { "title": "x5", "key": "Скорость парсинга" },
+              { "times": true, "key": "PRO-базы и инструменты ВК" },
+              { "check": true, "key": "Автоматизация парсинга" },
+              { "check": true, "key": "Новые вступления и друзья" },
+              { "title": "1", "key": "Одновременно авто-задач" },
+              { "times": true, "key": "Авто-задачи без задержки" },
+              { "check": true, "last": true, "key": "Поиск и анализ меломанов" }
             ])
             <div class="tariffs-footer">
               <div class="tariffs-price">1 333 ₽ <small>/мес.*</small></div>
@@ -41,15 +41,15 @@
           <div class="tariffs-col tariffs-pro">
             <div class="tariffs-header">Тариф Pro (Все сервисы)</div>
             @@loop('table-line.html', [
-              { "check_light": true },
-              { "title": "5" },
-              { "title": "x10" },
-              { "check_light": true },
-              { "check_light": true },
-              { "check_light": true },
-              { "title": "3" },
-              { "check_light": true },
-              { "title": "PRO базы", "last": true }
+              { "check_light": true, "key": "Стандартные инструменты" },
+              { "title": "5", "key": "Одновременно задач" },
+              { "title": "x10", "key": "Скорость парсинга" },
+              { "check_light": true, "key": "PRO-базы и инструменты ВК" },
+              { "check_light": true, "key": "Автоматизация парсинга" },
+              { "check_light": true, "key": "Новые вступления и друзья" },
+              { "title": "3", "key": "Одновременно авто-задач" },
+              { "check_light": true, "key": "Авто-задачи без задержки" },
+              { "title": "PRO базы", "last": true, "key": "Поиск и анализ меломанов" }
             ])
             <div class="tariffs-footer">
               <div class="tariffs-price">2 999 ₽ <small>/мес.*</small></div>
@@ -62,15 +62,15 @@
           <div class="tariffs-col last">
             <div class="tariffs-header">Бесплатный</div>
             @@loop('table-line.html', [
-              { "check": true },
-              { "title": "2" },
-              { "title": "x5" },
-              { "times": true },
-              { "times": true },
-              { "times": true },
-              { "times": true },
-              { "times": true },
-              { "check": true, "last": true }
+              { "check": true, "key": "Стандартные инструменты" },
+              { "title": "2", "key": "Одновременно задач" },
+              { "title": "x5", "key": "Скорость парсинга" },
+              { "times": true, "key": "PRO-базы и инструменты ВК" },
+              { "times": true, "key": "Автоматизация парсинга" },
+              { "times": true, "key": "Новые вступления и друзья" },
+              { "times": true, "key": "Одновременно авто-задач" },
+              { "times": true, "key": "Авто-задачи без задержки" },
+              { "check": true, "last": true, "key": "Поиск и анализ меломанов" }
             ])
             <div class="tariffs-footer">
               <div class="tariffs-price">666 ₽ <small>/мес.*</small></div>
@@ -80,6 +80,9 @@
         </div><!-- /slide -->
 
       </div>
-    </div>
+      <div class="swiper-pagination"></div>
+    </div><!-- /swiper -->
+
+    <div class="tariffs-note">*можно оплатить бонусами TargetHunter</div>
   </div>
 </div><!-- /tariffs -->
