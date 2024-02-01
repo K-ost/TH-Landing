@@ -7,13 +7,13 @@ $(function() {
 
 // reviewsSlider
 const reviewsSlider = new Swiper("#reviews_slider", {
-  loop: false,
+  loop: true,
   slidesPerView: 1,
   spaceBetween: 16,
   breakpoints: {
-    720: { slidesPerView: 2 },
-    900: { slidesPerView: 'auto', spaceBetween: 32, centeredSlides: true },
-  }
+    420: { slidesPerView: 2 },
+    720: { slidesPerView: 'auto', spaceBetween: 0, centeredSlides: true },
+  },
 })
 
 // brands_slider
@@ -42,10 +42,20 @@ const tariffsSlider = new Swiper(".tariffs-slider .swiper", {
 })
 
 
-if ( document.documentElement.clientWidth < 1020 ) {
-  document.querySelector('.header-nav').classList.add(['offcanvas'])
-  document.querySelector('.header-nav').classList.add('offcanvas-start')
-} else {
-  document.querySelector('.header-nav').classList.remove(['offcanvas'])
-  document.querySelector('.header-nav').classList.remove('offcanvas-start')
+/* addOffCanvas */
+function addOffCanvas() {
+  if ( document.documentElement.clientWidth < 1020 ) {
+    document.querySelector('.header-nav').classList.add(['offcanvas'])
+    document.querySelector('.header-nav').classList.add('offcanvas-start')
+  } else {
+    document.querySelector('.header-nav').classList.remove(['offcanvas'])
+    document.querySelector('.header-nav').classList.remove('offcanvas-start')
+  }
 }
+
+addOffCanvas()
+
+window.addEventListener('resize', () => {
+  addOffCanvas()
+})
+

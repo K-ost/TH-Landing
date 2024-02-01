@@ -280,3 +280,22 @@ h2, .h2 {
 	&-ok { background-image: url('../images/svg/ok.svg'); }
 }
 
+
+/* dropdown */
+.dropdown {
+	&-menu {
+		border: 0;
+		box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+		li {
+			font-size: 500; border-bottom: 1px solid var(--color-grey-extra-light);
+			&:last-child { border-bottom: 0; }
+			a {
+				color: var(--color-dark); display: block; text-decoration: none; padding: 12px var(--gap-sm);
+				transition: var(--anim);
+				&:hover { background: var(--color-grey-extra-light); color: var(--color-violet-blue); }
+			}
+		}
+	}
+}
+
+
