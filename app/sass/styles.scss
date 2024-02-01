@@ -59,6 +59,8 @@
   &-play {
     background: url('../images/svg/play.svg') 0 0 / cover no-repeat;
     border: 0;
+    border-radius: 50%;
+    box-shadow: 4px 10px 40px rgba(0,0,0,0.4);
     display: inline-block;
     outline: none;
     width: 96px;
