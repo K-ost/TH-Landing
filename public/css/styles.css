@@ -1506,6 +1506,18 @@ h2 span, .h2 span {
   .copyright-text {
     margin-bottom: var(--gap);
   }
+
+  /* tariffs */
+  .tariffs-first {
+    display: none;
+    grid-area: auto;
+  }
+
+  .tariffs-slider {
+    grid-area: auto;
+    min-width: 0;
+    padding: 0;
+  }
 }
 /* mobile */
 @media screen and (max-width: 750px) {
@@ -1646,21 +1658,6 @@ h2 span, .h2 span {
   }
 
   /* tariffs */
-  .tariffs {
-    margin: 0 0 var(--margin-section);
-  }
-
-  .tariffs-first {
-    display: none;
-    grid-area: auto;
-  }
-
-  .tariffs-slider {
-    grid-area: auto;
-    min-width: 0;
-    padding: 0;
-  }
-
   .tariffs-header {
     padding: 32px var(--gap) var(--gap);
     margin: 0;

@@ -28,11 +28,12 @@ const brandsSlider = new Swiper("#brands_slider", {
 })
 
 // tariffs1
-const tariffs1 = new Swiper(".tariffs-slider .swiper", {
+const tariffsSlider = new Swiper(".tariffs-slider .swiper", {
   slidesPerView: 1,
   spaceBetween: 8,
   breakpoints: {
-    720: { slidesPerView: 2 },
+    480: { slidesPerView: 2 },
+    680: { slidesPerView: 3, spaceBetween: 0 },
     900: { slidesPerView: 3 },
   }
 })
