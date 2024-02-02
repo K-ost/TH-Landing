@@ -10,8 +10,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> -->
+	<link rel="stylesheet" href="css/scripts.css" type="text/css">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<!--[if IE]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
 </head>
@@ -1144,20 +1145,20 @@
 		<div class="tab-pane fade" id="third-tab" role="tabpanel">
 			<div class="grid grid-3 grid-mb-1 chart_wrapper">
   <div class="chartbox">
-    <div class="chartbox-title"><b>100</b> публикаций/мес.</div>
+    <div class="chartbox-title"><b id="chartValue">10</b> публикаций/мес.</div>
     <div class="chartline">
       <div class="chartline-item">
   <div class="chartline-point"></div>
   <div class="chartline-num">10</div>
 </div><!-- /chartline-item --><div class="chartline-item">
   <div class="chartline-point"></div>
-  <div class="chartline-num">25</div>
+  <div class="chartline-num">35</div>
 </div><!-- /chartline-item --><div class="chartline-item">
   <div class="chartline-point"></div>
   <div class="chartline-num">70</div>
 </div><!-- /chartline-item --><div class="chartline-item">
   <div class="chartline-point active"></div>
-  <div class="chartline-num">10</div>
+  <div class="chartline-num">100</div>
 </div><!-- /chartline-item --><div class="chartline-item">
   <div class="chartline-point"></div>
   <div class="chartline-num">150</div>
@@ -1175,10 +1176,16 @@
   <div class="chartline-num">1000</div>
 </div><!-- /chartline-item --><div class="chartline-item">
   <div class="chartline-point"></div>
+  <div class="chartline-num">1500</div>
+</div><!-- /chartline-item --><div class="chartline-item">
+  <div class="chartline-point"></div>
   <div class="chartline-num">2000</div>
 </div><!-- /chartline-item -->
     </div><!-- /chartline -->
-    <div class="tariffs-price">за 699 ₽ <small>/мес.*</small></div>
+    
+    <input type="text" id="rangeslider" name="rangeslider">
+
+    <div class="tariffs-price">за <span id="priceValue">99</span> ₽ <small>/мес.*</small></div>
     <a href="#" class="btn btn-white btn-sm">Подключить</a>
   </div><!-- /chartbox -->
 
@@ -1441,6 +1448,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>

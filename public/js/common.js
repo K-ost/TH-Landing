@@ -1,6 +1,17 @@
 $(function() {
 
-
+  // rangeslider
+  $("#rangeslider").ionRangeSlider({
+		type: "single",
+    min: 10,
+    max: 2000,
+    grid: true,
+    values: [ 10, 35, 70, 100, 150, 200, 300, 500, 1000, 1500, 2000 ],
+    onChange: function(data) {
+      document.querySelector('#chartValue').textContent = data.from_value
+      document.querySelector('#priceValue').textContent = data.from_value * 10
+    }
+  });
 
 });
 
